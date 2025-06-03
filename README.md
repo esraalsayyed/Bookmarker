@@ -1,7 +1,6 @@
 📚 Bookmarker
-A simple and elegant web app that allows users to save, manage, and access their favorite website links easily.
-
-Live Demo: esraalsayyed.github.io/Bookmarker
+#A simple and elegant web app that allows users to save, manage, and access their favorite website links easily.
+#Live Demo: esraalsayyed.github.io/Bookmarker
 
 ✨ Features
 Add website bookmarks with a name and URL
