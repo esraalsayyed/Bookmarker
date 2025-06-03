@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmark</title>
+  <link rel="icon" href="image/5801789.png" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/all.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:ital,wght@0,1..1000;1,1..1000&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+  <main class="position-relative">
+    <!-- start of pop-up  -->
+    <div class="overlay position-fixed top-0 left-0 w-100 h-100 bg-black bg-opacity-50 d-none" id="overlay">
+      <div class="card position-fixed z-1 border-0 rounded shadow-lg d-none" id="popup">
+        <h3 class="py-3">Name or URL is not valid!</h3>
+        <div class="info-list mt-3">
+          <ul class="list-unstyled ms-4 lead fs-6">
+            <li>Please follow the rules below</li>
+            <li>Site name must contain at least 3 characters</li>
+            <li>Site URL must be a valid one</li>
+            <li>The URL must start with either http or https followed by ://</li>
+            <li>it must contain www. followed by subdomain of length(2, 256)</li>
+          </ul>
+        </div>
+        <div class="footer d-flex justify-content-end px-4 py-3">
+          <button class="btn text-white" onclick="hidePopUp()">OK</button>
+        </div>
+      </div>
+    </div>
+    <!-- end of pop-up -->
+    <!-- start of input -->
+    <div class="layer">
+      <div class="container">
+        <header class="text-center text-white">
+          <h1><span class="letter-b">B</span><span id="bookmark" class="ookmark"></span></h1>
+          <h2>Bookmark your favorite sites <i class="fa-solid fa-heart fs-6"></i></h2>
+        </header>
+        <div class="inputs text-white d-flex flex-column justify-content-center align-items-center">
+          <div class="name-input w-75 mb-4">
+            <label for="websitename" class="my-2"><i class="fa-solid fa-heart"></i> Name</label>
+            <input oninput="validationInputs(this)" id="websitename" type="text" placeholder="Bookmark Name"
+              class=" form-control" />
+          </div>
+          <div class="url-input w-75">
+            <label for="websiteurl" class="my-2"><i class="fa-solid fa-link"></i> URL</label>
+            <input oninput="validationInputs(this)" id="websiteurl" type="text" placeholder="Website URL"
+              class=" form-control" />
+          </div>
+          <button onclick="addBookmark()" class="btn text-white my-5 px-4"><span>Add Bookmark</span></button>
+        </div>
+        <!-- end of input and buttons  -->
+        <!-- start of table  -->
+        <div class="table-sec text-center m-auto w-75">
+          <table class="bg-white w-100 table mb-0">
+            <thead>
+              <tr>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody id="table-data">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#bookmark', {
+      strings: ['OOKMARKER.'],
+      typeSpeed: 80,
+      loop: Infinity
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+a {
+  text-decoration: none;
+}
+:root {
+  --main-font: "Ysabeau Office", sans-serif;
+  --b-font: "Fredericka the Great", serif;
+  --header-font: "Capriola", sans-serif;
+}
+main {
+  background-image: url(../image/background.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+main .layer {
+  background-color: #8064aab4;
+  min-height: 100vh;
+}
+main header h1 {
+  padding-top: 4.375rem;
+  padding-bottom: 2.5rem;
+}
+header .ookmark {
+  font-family: var(--header-font);
+  font-family: 1.9375rem;
+  font-weight: 500;
+}
+header .letter-b {
+  font-family: var(--b-font);
+  font-size: 4.375rem;
+}
+main header h2 {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+main .inputs label {
+  font-family: var(--main-font);
+  font-size: 1.0625rem;
+  font-weight: 500;
+  letter-spacing: 0.1875rem;
+}
+main .inputs input {
+  font-family: var(--main-font);
+}
+.form-control:focus {
+  border-color: #b49ad8 !important;
+  box-shadow: 0 0 0 0.25rem #b49ad8da;
+}
+main button {
+  background-color: #5d4584 !important;
+}
+main button span {
+  font-size: 1rem;
+  font-family: var(--main-font);
+}
+main .table-sec th,
+td,
+a {
+  color: #68528c !important;
+}
+main .table-sec {
+  font-family: var(--main-font);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  letter-spacing: 0.1875rem;
+}
+main .table-sec button {
+  background-color: white !important;
+  color: #68528c !important;
+  border-color: #68528c !important;
+  transition: all 0.5s;
+}
+main .table-sec button:hover {
+  background-color: #68528c !important;
+  color: white !important;
+}
+main .card {
+  width: 450px;
+  height: 300px;
+  top: calc(50% - (310px / 2));
+  left: calc(50% - (450px / 2));
+  font-family: var(--main-font);
+  letter-spacing: 0.125rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+main .card h3 {
+  margin: 0;
+  background-color: #68528c;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  padding: 10px 10px;
+  font-weight: 700;
+}
+main .card .info-list {
+  color: #888888;
+}
+main .card .footer {
+  background-color: #f5f8fa;
+}
+@media (max-width: 1199.98px) {
+  main .name-input,
+  .url-input,
+  .table-sec {
+    width: 100% !important;
+  }
+}
