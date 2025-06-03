@@ -1,17 +1,22 @@
-📚 Bookmarker
-#A simple and elegant web app that allows users to save, manage, and access their favorite website links easily.
-#Live Demo: esraalsayyed.github.io/Bookmarker
+# 📚 Bookmarker
 
-✨ Features
-Add website bookmarks with a name and URL
-Validate input to ensure correct URL format
-Open bookmarked websites directly
-Delete bookmarks
-Stores data locally using localStorage so bookmarks persist after refresh
+A simple and elegant web app that allows users to save, manage, and access their favorite website links easily.
 
-🛠️ Technologies Used
-HTML5
-CSS3
-JavaScript (Vanilla)
-localStorage API
+🔗 **Live Demo:** (http://esraalsayyed.github.io/Bookmarker/)
+
+
+## ✨ Features
+
+- ✅ Add website bookmarks with a name and URL
+- 🌐 Open saved bookmarks in a new tab
+- 🗑️ Delete bookmarks instantly
+- 💾 Persistent data using `localStorage`
+- 🚫 Input validation to ensure proper URL format
+
+## 🛠️ Built With
+
+- **HTML5** – for structure  
+- **CSS3** – for styling  
+- **JavaScript (Vanilla)** – for logic and interactivity  
+- **localStorage API** – to store data persistently in the browser  
 
